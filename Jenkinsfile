@@ -4,8 +4,8 @@ pipeline {
 
   environment {
     DOCKERHUB_CREDENTIALS=credentials('belt-token')
-    AWS_ACCESS_KEY_ID     = credentials('RawanZabidi-aws-secret-key-id')
-    AWS_SECRET_ACCESS_KEY = credentials('RawanZabidi-aws-secret-access-key')
+    AWS_ACCESS_KEY_ID     = credentials('rawanzabidi-aws-secret-key-id')
+    AWS_SECRET_ACCESS_KEY = credentials('rawanzabidi-aws-secret-access-key')
     ARTIFACT_NAME = 'Dockerrun.aws.json'
     AWS_S3_BUCKET = 'rawanzabidi-belt2-artifacts-123456'
     AWS_EB_APP_NAME = 'belt-EB'
