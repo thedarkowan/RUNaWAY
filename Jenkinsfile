@@ -18,7 +18,7 @@ pipeline {
     stage('Build') {
 
       steps {
-        sh 'docker build -t rawanzabidi/run:latest .'
+        sh 'docker build -t rawanzabid/run:latest .'
       }
     }
 
@@ -32,7 +32,7 @@ pipeline {
     stage('Push') {
 
       steps {
-        sh 'docker push rawanzabidi/run:latest'
+        sh 'docker push rawanzabid/run:latest'
       }
     }
 
